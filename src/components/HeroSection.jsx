@@ -28,7 +28,7 @@ const HeroSection = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://readdy.ai/home/6d2a6193-1674-4bc4-acb6-7020652f1197/90b60ac3-b34d-4b28-ab2a-1a8dfdbcdbae"
+                  href="/Dashboard"
                   data-readdy="true"
                 >
                   <Button className="bg-indigo-600 hover:bg-indigo-700 text-lg px-8 py-6 !rounded-button whitespace-nowrap cursor-pointer">
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 </a>
                 <Button
                   variant="outline"
-                  className="border-gray-700 text-white hover:bg-gray-800 text-lg px-8 py-6 !rounded-button whitespace-nowrap cursor-pointer"
+                  className="text-black bg-white border-gray-700 hover:bg-gray-500 !rounded-button whitespace-nowrap cursor-pointer "
                 >
                   <i className="fas fa-play-circle mr-2"></i> Watch Demo
                 </Button>

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-950 py-16 p-3 px-[40px] md:px-[80px]">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
+          <div className="flex">
             <div className="md:col-span-2">
               <div className="flex items-center mb-6">
                 <i className="fas fa-chart-bar text-3xl mr-2 text-indigo-400"></i>
@@ -32,72 +32,6 @@ const Footer = () => {
                   </a>
                 ))}
               </div>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Product</h3>
-              <ul className="space-y-4">
-                {[
-                  "Features",
-                  "Pricing",
-                  "Enterprise",
-                  "Security",
-                  "Roadmap",
-                  "What's New",
-                ].map((item, index) => (
-                  <li key={index}>
-                    <a
-                      href="#"
-                      className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Resources</h3>
-              <ul className="space-y-4">
-                {[
-                  "Documentation",
-                  "Tutorials",
-                  "Blog",
-                  "Community",
-                  "API",
-                  "Support",
-                ].map((item, index) => (
-                  <li key={index}>
-                    <a
-                      href="#"
-                      className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Company</h3>
-              <ul className="space-y-4">
-                {[
-                  "About Us",
-                  "Careers",
-                  "Partners",
-                  "Contact",
-                  "Legal",
-                  "Privacy",
-                ].map((item, index) => (
-                  <li key={index}>
-                    <a
-                      href="#"
-                      className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
           <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">

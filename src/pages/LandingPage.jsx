@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ChevronRight, BarChart2, LineChart, PieChart } from "lucide-react";
-import { DataBlob } from './DataBlob.jsx';
+import { DataBlob } from '../components/signIn-signUp/DataBlob';
 
-const Page = () => {
+const HeroSection = () => {
   return (
-    <div className="relative min-h-screen bg-linear-to-t to-violet-400 from-white min-w-screen flex flex-col items-center justify-center text-center px-4">
+    <div className="relative min-h-screen min-w-screen flex flex-col items-center justify-center text-center px-4">
       <div className="space-y-8 max-w-4xl mx-auto z-10">
         <div className="flex items-center justify-center gap-2 animate-fade-in">
           <BarChart2 className="w-8 h-8 text-[#6E59A5]" />
@@ -26,7 +26,7 @@ const Page = () => {
           <Button 
             size="lg"
             className="bg-[#6E59A5] hover:bg-[#5A478C] text-white px-8"
-            onClick={() => window.location.href = '/login'}
+            onClick={() => window.location.href = './SignUpForm'}
           >
             Get Started <ChevronRight className="ml-2" />
           </Button>
@@ -47,4 +47,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default HeroSection;
